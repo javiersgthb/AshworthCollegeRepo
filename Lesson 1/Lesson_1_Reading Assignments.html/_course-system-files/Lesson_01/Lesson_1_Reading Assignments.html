@@ -1,0 +1,261 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Developer Template - Topic 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Font Awesome CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Course Styles -->
+    <link rel="stylesheet" href="/shared/HTML-Template-Library/HighSchool/layouts/../assets/css/main.min.css"> </head>
+
+<body class="content layout-1" role="document">
+<div class="container-fluid"><header>
+<div class="row">
+<div class="col-xs-12 ">
+<h2>Text Readings</h2>
+<p>This first lesson has no readings from your textbook because it describes some basic computer programming concepts that are not covered in your text. All future lessons and assignments will be drawn from your textbook. Read the instructor-written lesson Programming Concepts following the Lecture Notes. The Internet subjects listed in the article need to be investigated; you can use some of the suggested Internet sites to get started.</p>
+<h2>Additional Readings</h2>
+<p><b>Required Readings</b></p>
+<ul>
+<li>Review the O&rsquo;Reilly History of Programming Languages poster at&nbsp;<a href="https://www.cs.toronto.edu/~gpenn/csc324/PLhistory.pdf" target="_blank" rel="noopener noreferrer">https://www.cs.toronto.edu/~gpenn/csc324/PLhistory.pdf</a>. The poster is quite large and without printing the entire poster on a huge sheet of paper, it is difficult to see. But, if you click on the poster and magnify it, you can scroll around to get an idea of how many programming languages were developed and how common and sometimes complex the relationships are between different but similar languages.</li>
+<li>The three sites listed here are only a few of the many tutorial sites that will assist the beginner with information, lessons, and code samples. Spend a short time on each site just to get acquainted with the look and feel of the site. In the future, you can Google&nbsp;C# tutorials&nbsp;and develop your own list of sites that best suit your learning style. Good online tutorials are a powerful way to learn any programming language.</li>
+<li>TutorialsPoint.com:&nbsp;<a href="http://www.tutorialspoint.com/csharp/" target="_blank" rel="noopener noreferrer">www.tutorialspoint.com/csharp/</a></li>
+<li>Complete C-Sharp Tutorial.com:&nbsp;<a href="http://www.completecsharptutorial.com/" target="_blank" rel="noopener noreferrer">www.completecsharptutorial.com</a></li>
+</ul>
+<p><b>Supplemental Readings</b></p>
+<ul>
+<li>This site offers a look at the history of programming languages: &nbsp;<a href="http://www.computernostalgia.net/articles/HistoryofProgrammingLanguages.htm" target="_blank" rel="noopener noreferrer">http://www.computernostalgia.net/articles/HistoryofProgrammingLanguages.htm</a></li>
+<li>If programming is in your future, a working knowledge of basic Object-Oriented Programming (OOP) concepts will be necessary. Keep these sites in mind when you want a brief description of an OOP concept:</li>
+<li><a href="http://www.codeproject.com/Articles/22769/Introduction-to-Object-Oriented-Programming-Concep" target="_blank" rel="noopener noreferrer">http://www.codeproject.com/Articles/22769/Introduction-to-Object-Oriented-Programming-Concep</a></li>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/concepts/object-oriented-programming" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/dotnet/visual-basic/programming-guide/concepts/object-oriented-programming</a></li>
+</ul>
+</div>
+</div>
+</header><main>
+<div class="row">
+<div class="col-xs-12 "><hr /></div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<h2>Lecture Notes</h2>
+</div>
+<p></p>
+<p>Welcome to the wonderful world of programming! In the IT (Information Technology) world, technology is a multifaceted realm where many skills and services are combined to build a product, deliver a service, or improve upon a process. Delivering on all of the above in the IT world can be relatively complex as, more often than not, there are several components involved, including hardware, networking, telephony, security, database administrators, end user support, and, of course, programmers. In IT, programmers (also known as software developers) are just one link in an important chain that gives an IT department the capability to create and/or customize a product or service to meet an end user's need. As such, that is what this course is intended to provide, an introduction to programming using Visual C#.</p>
+<p></p>
+<p>Let's think about that last statement for a moment, as we actually touched on two distinct concepts; the terms&nbsp;<em>programming</em>&nbsp;and&nbsp;<em>Visual C#</em>&nbsp;are mutually exclusive. Programming is defined as "the designing or writing of computer programs." There are hundreds of thousands of programmers in the world. Depending on the device they are programming for (such as a mobile/tablet, Web browser, Mac/PC, or even a niche hardware device such as a home DVR), these programmers are designing or writing programs that help control that hardware. These programs can vary greatly, performing such varied operations as handling what occurs on the computer when a button is clicked or what happens when a remote-control button is pushed. As I'm sure you can see, the possibilities are endless!</p>
+<p>A computer program can be defined as a series of steps designed to perform a task. Some computer programs perform thousands (or millions) of steps and often a large number of tasks. A program that adds two numbers and shows the result is on the simpler end of that spectrum. An online multi-player role-playing game, a word processor, or a commercial database program are all examples of programs that perform hundreds or thousands of tasks. So, the complexity and mission of computer programs can be vastly different, but the unit that does the job is called a program or an application.</p>
+<p>The original programs for the first computers were written in a language of ones and zeros called <em>machine code</em>, where the pattern of ones and zeros told the computer what to do. A short machine-code program that adds two numbers and stores the result might look like this:</p>
+<blockquote>&nbsp;10011010 00000000 11001010 11100101 01000110 11000011 10101111</blockquote>
+<p>Imagine working with numbers like this every day! Needless to say, programmers wanted a more human-friendly way to write the codes for their programs. The next generation of programmers produced a language called <em>Assembler</em> or <em>Assembly Language</em>. It is still used today, and it looks like this:</p>
+<blockquote>LDAA&nbsp;&nbsp;07
+<p>ADDA&nbsp;&nbsp;02<br />STORA 200<br />STOP</p>
+</blockquote>
+<p>Here is what this program says:</p>
+<blockquote>Line 1: Load the memory location called &ldquo;Register A&rdquo; with 7.
+<p>Line 2: Add 2 to the memory location called &ldquo;Register A.&rdquo; "Register A" would now contain the sum of 7 and 2, or 9.<br />Line 3: Store the contents of Register A (the 9) in RAM memory location 200.<br />Line 4: Terminate the program.</p>
+</blockquote>
+<p>You can see from comparing the English description with the code that this language can be understood with proper training. When your instructor or the text tells you that "LD" means "load" and "ADDA" means "Add the quantity to the right to location A," you will, with practice, learn all of the many commands and how to properly use them to write a working program.</p>
+<p>Finally, a series of languages were invented that were closer to English and easier for the programmer to understand and type. Here is the same program (add 2 and 7; store the result) in the C# language:</p>
+<blockquote><code>int sum, firstNumber = 7, secondNumber = 2;</code><br /><code>sum = firstNumber + secondNumber;</code></blockquote>
+<p>And the same thing in Visual Basic:</p>
+<blockquote>&nbsp;<code>firstNumber = 7</code><br /><code>secondNumber = 2</code><br /><code>sum = firstNumber + secondNumber</code></blockquote>
+<p>This code is still not in English, but with training, programmers can learn this language and type what we call <em>source code</em> about as fast as they type normal text. Also notice the similarities between the two samples. This difference is called <em>syntax</em>. Both programs perform the exact same task, but their language uses different syntax to perform the task. A special program, called a <em>compiler</em>, translates this source code into the language of ones and zeros called machine code that is the only language that the CPU of a computer understands.</p>
+<p>The first computer languages were designed to meet specific needs. Fortran (Formula Translation) was designed to be primarily a mathematical language that could quickly and efficiently perform mathematical calculations. COBOL (COmmon Business-Oriented Language), invented by Ms. Grace Hopper, then a Commander in the U.S. Navy, was designed specifically to process and print business reports. BASIC (Beginner&rsquo;s All-Purpose Symbolic Instruction Code) was designed as a simpler, easier-to-understand code, better for teaching students of programming. There are hundreds of languages being used today. Most of these appeared because the creator of that language needed to do something faster or more efficiently, or do something that could not be done by another available language.</p>
+<p>C# (pronounced "Cee sharp") is one of the more recent programming languages. Much like humankind speaks many different languages (e.g., English, Spanish, French, or the South African dialect of Zulu, which speaks using clicks!), computers also interpret different languages. What language you use depends on what your product or service is going to run on. Using our examples above, an iPhone or iPad mobile device uses "Objective C," Internet programming could use PHP or ASP.NET or JavaScript, a Mac or PC could use Cocoa or C#, and a DVR could use UNIX. Of course, the languages mentioned here are just a few of the hundreds of languages! For more information on possible languages, take a look at the following site:</p>
+<blockquote>How Many Computer Languages Are There?
+<p><a href="http://www.cs.man.ac.uk/~pjj/cs1001/software/node3.html" target="_blank" rel="noopener noreferrer">http://www.cs.man.ac.uk/~pjj/cs1001/software/node3.html</a></p>
+</blockquote>
+<p>The purpose of this introduction is not to intimidate or scare you. It is to help you realize the possibility and opportunity for software developers. First, although there may be many languages, most programming concepts are the same (an "if-then" conditional statement, a way to ask a true/false statement, performs the same function in every language, how it is written, called the syntax, depends upon the language you are using to write the program.) Second, you have chosen an excellent programming language to study. C# is one of the most popular languages used today, albeit one of the more complex ones. Therefore, as you continue with this course, it is important that you study, study, study. Programming isn't like reading a book, where you read a passage once and then move on to the next part of the story. Programming takes practice and time; as the adage goes, "practice makes perfect." When moving through this course textbook, be sure to perform as many text examples as you can! These examples will help drill you on every detail about programming as well as the programming environment you will be using.</p>
+<p>Before we delve into the text and begin with the C# language, it will be useful for you to have a little background as to the evolution of computer programming languages. Rather than utilizing the textbook, I have written a short article below and also listed a number of Internet links where you can read about various subjects.</p>
+<p>I&rsquo;ll now introduce you to a few fundamental programming concepts, which I&rsquo;ll expand on and add to in future lessons. There are several key points I want to call your attention to now because I believe them to be of utmost importance. The first is for the programmer to develop the habit of using meaningful names within the program for variables and constants. To explain this... Some of the early computer programming languages had very restrictive naming conventions. For example, if you wanted to have a place to store daily, weekly, monthly, and annual sales totals, the best you could do would be to use the memory location names in the middle column of the table below. The names in the right column of the table are typical of what you can use in almost all programming languages today. Which column of names would you prefer to use?</p>
+<table border="1" cellpadding="1" cellspacing="1">
+<tbody>
+<tr>
+<td><strong>What to store</strong></td>
+<td><strong>Fortran names (circa 1978)</strong></td>
+<td><strong>C# and many other languages today</strong></td>
+</tr>
+<tr>
+<td>Sales total for today</td>
+<td>S1</td>
+<td>dailySalesTotal or daily_sales_total</td>
+</tr>
+<tr>
+<td>Sales total for this week</td>
+<td>S2</td>
+<td>weeklySalesTotal or weekly_sales_total</td>
+</tr>
+<tr>
+<td>Sales total for this month</td>
+<td>S3</td>
+<td>monthlySalesTotal or monthly_sales_total</td>
+</tr>
+<tr>
+<td>Sales total for this year</td>
+<td>S4</td>
+<td>annualSalesTotal or annual_sales_total</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p>Do not trivialize the importance of creating meaningful file names, control names, etc.&nbsp;<em>You</em>&nbsp;may be the one who works with the program at a later date, and you won&rsquo;t want to wonder what the purpose of a particular control is. The name you give to a C# control ought to identify what it is. You will not regret developing the habit of devising appropriate names. Your text does cover this subject but not until a later chapter.</p>
+<p>There is a need to not only determine the proper&nbsp;<em>instructions</em>&nbsp;to get objects to perform in the way you want them to but also to know&nbsp;<em>where</em>&nbsp;in the application those instructions should be entered. Even in a visual Windows-based, object-oriented programming language, you cannot turn your back on good programming concepts. There must be a logical sequence to the code you write. Too many programmers begin to program by just sitting down at the computer and hacking away. Rather, I suggest that you take a very organized approach to programming. Think through the problem before you sit down at the keyboard.&nbsp;<strong>Think before you code!</strong> These programming ideas will be developed further as you progress through the course.</p>
+<p>Consider one last comment that I hope will ease your mind when it comes to learning a programming language. When I am learning something new in the computer field, I still read parts of the new material two or three times, sometimes more often. I still perform programming exercises that are new to me a number of times to fully grasp new techniques. Do not be hesitant to repeat various activities a number of times. Work hard, have fun.</p>
+</div>
+</main></div>
+<p></p>
+<p></p>
+<p></p>
+<main>
+<div class="row">
+<div class="col-xs-12 "><hr /></div>
+</div>
+<div class="row">
+<h2>Programming Concepts</h2>
+</div>
+<div class="row"></div>
+<div class="row">
+<p>Efficient and accurate software development has been a very elusive goal ever since the advent of computing. I firmly believe that regardless of whether one is programming in a purely procedural programming language or in an object-oriented language, as we will be doing in C#, there are certain considerations that should remain constant. It is those considerations that I wish to address in this introduction. I am going to hit the highlights and leave it up to you to follow up with your own investigation.</p>
+<p>The first term we have is what is called&nbsp;<em>structured programming</em>. This idea was born out of the mid-1960s as a response to the need for more readable programs and for increased programmer productivity. It is an established fact that in most computer programming departments, 60 to 80 percent of programming effort is devoted to correcting and revising existing programs. Of course, this figure varies from situation to situation, but the amount of time and effort dedicated to original programming in many environments is not as great as you might think. This maintenance programming requires the correcting, refining, and updating of existing programs. In too many cases early on in programming, programs were found to be quite difficult to follow due to little apparent organization, hard-to-understand names, and so many <em>go to</em> statements that not even the original programmer found it easy to follow the flow of logic. To remedy this situation, a more systematic and organized approach was developed.</p>
+<p>However, after many years in the programming field, I have observed something that seems to remain constant. This constant is that too many programmers have not learned from history and are still managing to write programs that are simply not easily maintainable. In lectures to my students, I discuss the term&nbsp;<em>script kiddies</em>&nbsp;as those who simply do not display what I consider to be good, efficient programming skills; they simply "copy and paste" code without any thought or little knowledge of how it works. I maintain that a good programmer has to do more than just follow the programming rules in any particular language. One may be the world&rsquo;s best coder of a language, the fastest coder, or write very sophisticated code. However, when writing programs for a company, recall where the programming effort, time, and money goes. It goes to maintaining the program. To this day, so very much of the time spent on maintenance programming goes to attempting to decipher the code someone else has written. To be what I call a good and efficient programmer, one has to expand on what most define as structured programming and embrace two additional programming concepts. First, let&rsquo;s look at what the original proponents of structured programming said. They stated that all programming logic could fit into the three control structures of sequence, iteration, and selection. Early pioneers of structured programming were Bohm &amp; Jacopini and later Edgar Dykstra. They stated that all programming logic could fit into one of three control structures that they called&nbsp;<strong>sequence</strong>,<strong>&nbsp;iteration</strong>, and&nbsp;<strong>selection</strong>.</p>
+<p>Let's take a look at these three control structures. A <em>control structure</em> is a principal concept in most programming languages because it is essentially a block of code that controls the execution of a program. Control structures are used in all programming languages, and you will certainly use them in C#. All three of these control structures are covered in greater detail in the Control Statements chapter in your text.</p>
+<p><strong><em>Sequence</em></strong>. One operation follows another with nothing tested or done to alter the direction of flow. There is one entry point and one exit point. Enter at step 1 and leave at step 3. You will typically use sequence structures as you logically control functions in your programs.</p>
+<p>An example of sequence is shown here:</p>
+<blockquote>Get radius of circle from user.
+<p>Enter radius into the formula: Area = &pi;R2<br />Compute the area of a circle.<br />Print/Display the result to the user.</p>
+</blockquote>
+<center>
+<p><img src="../../v9/Images/Lect1_4.jpg" /></p>
+</center>
+<p></p>
+<p><strong><em>Selection</em></strong>. Depending on whether a particular condition is true or not, the program executes one of two actions and exits the structure. There is one entry point and one exit point from this control structure. The structure begins with a decision. This structure is also known as the "if-then-else" structure because whether a condition is true determines what happens next in the logic.</p>
+<p>An example of selection is shown here:</p>
+<blockquote>If temperature is less than 70 degrees, then turn on heater.
+<p>If temperature is greater than 76 degrees, then turn on air conditioner.<br />If temperature is between 70 and 76, turn heater and air conditioner off.</p>
+</blockquote>
+<center>
+<p><img src="../../v9/Images/Lect1_5.jpg" /></p>
+</center>
+<p></p>
+<p><strong><em>Iteration</em></strong>. This structure provides the repetition in a program. Most times the program needs to execute a series of steps a number of times. A loop needs to be created to do this effectively. The true iteration structure has one entry point and one exit point and begins with a decision. Programmers typically use iteration for "while" loops, which cause a program to continually run the same blocks of code "while" a condition is true.</p>
+<p>Here is an example of iteration:</p>
+<ol>
+<li>Get pay rate and hours worked for the next employee from time card file.</li>
+<li>Compute employee deductions.</li>
+<li>Compute employee net pay.</li>
+<li>Print employee pay check for net amount.</li>
+<li>If there are still employee entries in the time card file, go to step 1, otherwise, go to step 6.</li>
+<li>End the program.</li>
+</ol>
+<p>This sequence of steps will repeat until all employees are paid.</p>
+<center>
+<p><img src="../../v9/Images/Lect1_6.jpg" /></p>
+</center>
+<p></p>
+<p>The&nbsp;<em>go to</em>&nbsp;statement is said to be one of the primary culprits of adding to the complexity of a computer program because of the jumping back and forth between routines. This has led many to define structured programming as&nbsp;<em>go to-less</em>&nbsp;programming. When Dykstra originally set down the premise of structured programming, it was the restriction of the&nbsp;<em>go to</em>&nbsp;that he was after, not necessarily its complete abolishment. There are times where the downward&nbsp;<em>go to</em>&nbsp;can be useful, and he said it could be used.</p>
+<p>You are going to find that regardless of which programming environment you find yourself in, these structured concepts will be necessary and useful. Each language has its own method for implementing these control structures, but all languages will have them.</p>
+<p>As a software developer, I have used modern languages for many years, including C#. During that time, I have been exposed to the importance of the Software Development Life Cycle (SDLC). The SDLC is a universal programming concept that can be customized to suit each software developer's needs. The SDLC provides a framework for several phases of a software development project. Each phase focuses on acquiring appropriate input and metrics from several stakeholders during the process to ensure that all intended functionality is discussed, documented, and delivered to the end user as envisioned. Failure to not follow a model such as the SDLC can result in a programming project that doesn't work properly, doesn't perform the desired functions as intended, or flat out fails to meet the needs of the market it was designed for, causing a loss in time and resources. A few variations of the SDLC have been developed, but the one we will study here has five phases. Each "output," or the result of one phase, serves as "input" for the next phase. In the end, you have a cycle of feedback from each phase that allows the programmer to "think first," then write code, and then test that the code does what it was intended to do! Following the SDLC, no matter how small or large your programming project, will ensure that the desired outcome is achieved. The five phases of the SDLC are:&nbsp;<strong>Requirements</strong>,<strong>&nbsp;Design</strong>,<strong>&nbsp;Implementation</strong>,<strong>&nbsp;Testing</strong>, and&nbsp;<strong>Evaluation</strong>. (To remember the words of the SDLC, some use the acronym&nbsp;<strong>R</strong>eal&nbsp;<strong>D</strong>evelopers&nbsp;<strong>I</strong>ndicate&nbsp;<strong>T</strong>rue&nbsp;<strong>E</strong>rrors as a memory aid.)</p>
+<p><strong>Additional Structured Programming Concept One: It needs to be an organized approach that uses the Software Development Life Cycle (SDLC)</strong></p>
+<ul>
+<ul>
+<li>Requirements
+<ul>
+<li>The need for the software is defined by the client, business owner, project champion, business analyst, and/or project manager.</li>
+<li>High-level specifics are discussed and considered to showcase the overall value of the product or service, where the software should reside permanently, by what date the software should be completed, and the available budget to fund the project.</li>
+<li>Team members are identified to ensure that the appropriate parties are involved, that existing hardware is available to support the needs of the software, and that any legacy systems (software already in place) will be compatible with the newly written software.</li>
+</ul>
+</li>
+</ul>
+</ul>
+<br />
+<ul>
+<ul>
+<li>Design
+<ul>
+<li>The low-level (i.e., technical) requirements are defined in some detail to show how the software will work, where it will store data, what computers it will communicate with, and what to do when an error occurs. This is all in line with the high-level requirements defined in the previous phase.</li>
+<li>Visual diagrams are created to help define and explain the needs of the system details defined in the low-level requirements and to describe how any interactive screens/controls will be displayed and their functionality.</li>
+<li>A detailed time estimate is drafted to ensure that the project can be delivered in an appropriate time and budget.</li>
+</ul>
+</li>
+</ul>
+</ul>
+<br />
+<ul>
+<ul>
+<li>Implementation
+<ul>
+<li>Code is written based on the low-level design (from the Design phase) to present all user-interface screens as designed and to determine that all programs store and present data as intended by the system designer (also known as the <em>system architect</em>).</li>
+<li>Once all code is written and tested by the development team (a process known as&nbsp;<em>debugging</em>, because it finds any software "bugs," or errors, which are then fixed by the team writing the code), the code is saved, compiled, and pushed to a testing area out of the direct control of the software team.</li>
+</ul>
+</li>
+</ul>
+</ul>
+<br />
+<ul>
+<ul>
+<li>Testing
+<ul>
+<li>Using both the compiled code from the Implementation phase, as well as the high-level and low-level details documented during the Requirements and Design phases, a team will test the software to ensure that all interfaces interact properly with the user and that the program works as it was designed based on the design documentation.</li>
+<li>Any errors encountered during testing are recorded to indicate how they occurred, how they can be re-created, and the severity of the issue (a misspelled word on a screen has much less of an impact than an error screen that appears when submitting an order).</li>
+</ul>
+</li>
+</ul>
+</ul>
+<br />
+<ul>
+<li>Evaluation
+<ul>
+<li>The results of the testing phase are reviewed to determine how "buggy" the software is, what errors need to be fixed before the software is released for public usage, and what errors can be fixed at a later time.</li>
+<li>The outcome of the Evaluation phase feeds back into the Requirements phase, indicating what changes need to be made to the software before the next round of testing can occur.</li>
+</ul>
+</li>
+</ul>
+<p>Take notice of the phases we just discussed. Did you notice when the term&nbsp;<em>code</em>&nbsp;is first used? If not, go back and look again; it wasn't until the third phase! As you can see, the thought of what is going to be programmed takes precedence in this model; first we determine what we need to do, and then we go ahead and do it. By clearly defining and discussing what the software needs to do up front, the programmer can have a much better understanding of what needs to work and how it's supposed to work, reducing the amount of time fixing bugs, or, even worse, changing already written code that is programmed to do something the program shouldn&rsquo;t be doing!</p>
+<p><strong>Additional Structured Programming Concept Two: Code that is understandable and maintainable</strong></p>
+<p>A primary goal of good programming should be to provide code that is easy to understand, to maintain, and debug. (<em>Debug</em> means find and correct errors or problems in the program.) As was mentioned earlier, the majority of effort put into a program is maintenance, and anything that can make a program easier to understand is a positive step. It is under this goal of understandability and maintainability that we can list several additional techniques to help.</p>
+<ol>
+<li>Follow the rules for proper naming of modules or objects. The function or purpose of each module, method, or object should be evident by its name.</li>
+<li>Make all of your program&rsquo;s user-supplied data names completely understandable. Their purpose can often be defined by their name.</li>
+<li>Effective and literate naming is believed by many to be the #1 tool to writing maintainable code. It serves the purpose of producing self-documenting code as well.</li>
+</ol>
+<p>I invite you to get on the Internet and search several articles on structured programming.</p>
+<p><strong>One Final Area of Interest</strong></p>
+<p>It is important for you to have an understanding of the difference between a procedural programming language and an object-oriented programming language. I alluded to both of these when discussing structured programming.</p>
+<p>A procedural program is one where the programmer logically writes a list of instructions, telling the computer step by step what to do. This type of programming is commonly referred to as&nbsp;<em>top-down programming</em>, because that is how the computer reads and runs the program. It starts at the first line of code; enters its routines, then subroutines (which are routines called within a routine); and runs until the last line of code. It's almost as if the program is nothing more than a series of commands to perform. (Some languages, such as COBOL, were intended to be readable by most people, much like a book. Imagine walking up to a friend on the street and handing her 500 pages of code to read!) Procedural programming is a marvel in its own right and has served the computing industry well for decades, and remnants of procedural programming permeate even modern programs. Most programmers in the 1960s and early 1970s were writing code in one of the major procedural programming languages of that era. These languages included Assembly Language, BASIC, C, COBOL, Fortran, and Pascal. However, over the years, other models have presented themselves to the programming world, including object-oriented languages.</p>
+<p>We will learn a lot more about object-oriented languages. Their development has become an important factor in programming today. A list of the most popular and most used object-oriented programming languages would almost certainly include these languages: C++ (pronounced Cee plus-plus), C# (pronounced Cee Sharp), Java, PHP5, Python, Ruby, Smalltalk, and Visual Basic.</p>
+<p>The reason for using a different methodology of programming, such as object-oriented programming, is because it lends itself to reusability and structure. Here's an example that will become clear as you begin to read the textbook. An&nbsp;<strong>object</strong>&nbsp;is an in-memory representation of something you are interacting with. Let's say you have a "student"&nbsp;<strong>object</strong>. Every student has&nbsp;<strong>attributes</strong>, such as a name, address, and student number. In object-oriented programming, these attributes are called&nbsp;<strong>properties</strong>. These&nbsp;<strong>properties</strong>&nbsp;are defined and consistent across all programs that use this same&nbsp;<strong>object</strong>, meaning that the same terminology is used if you are referencing the student information on a screen, in code, or even storing information in a database. This might not seem like much, but this actually helps enforce standardization and&nbsp;<strong>reusability</strong>&nbsp;throughout software. Imagine one programmer referring to a name as "FirstAndLastName," and another programmer trying to call a name "FullName." That is a basic example, and yet you can already see how inconsistent things can become! With&nbsp;<strong>object-oriented programming</strong>, design becomes a very important factor (as discussed earlier with the SDLC). But when designed properly, you can create robust, enterprise-level programs. However, let's not get too ahead of ourselves here.</p>
+<p>For now, feel free to search the Internet for some live examples, just to get a feel for what the programming world has to offer. Soon enough, you'll be writing your own code. Listed below are possible subject searches for the Internet as well as some specific sites you should visit.</p>
+<ul>
+<li>Object-oriented programming languages&nbsp;<br /><a href="http://searchsoa.techtarget.com/definition/object-oriented-programming" target="_blank" rel="noopener noreferrer">http://searchsoa.techtarget.com/definition/object-oriented-programming</a></li>
+<li>Procedural programming languages<br /><a href="http://www.computerhope.com/jargon/p/proclang.htm" target="_blank" rel="noopener noreferrer">http://www.computerhope.com/jargon/p/proclang.htm</a></li>
+<li>History of programming languages<br /><a href="https://www.cs.toronto.edu/~gpenn/csc324/PLhistory.pdf" target="_blank" rel="noopener noreferrer">https://www.cs.toronto.edu/~gpenn/csc324/PLhistory.pdf</a></li>
+</ul>
+</div>
+</main>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>// <![CDATA[
+window.jQuery || document.write('<script src="../../assets/<g class="gr_ gr_237 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" id="237" data-gr-id="237">thirdpartylib</g>/jquery/jquery-1.11.3.min.js"><\/script>')
+// ]]></script>
+</p>
+<p>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</p>
+<p>
+<script src="/shared/HTML-Template-Library/HighSchool/layouts/../../assets/thirdpartylib/svg4everybody/svg4everybody.min.js"></script>
+</p>
+</body>
+
+</html>

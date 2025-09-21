@@ -1,0 +1,83 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Developer Template - Topic 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Font Awesome CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Course Styles -->
+    <link rel="stylesheet" href="/shared/HTML-Template-Library/HighSchool/layouts/../assets/css/main.min.css"> </head>
+
+<body class="content layout-1" role="document">
+<div class="container-fluid"><header>
+<div class="row">
+<div class="col-xs-12 ">
+<h2>Text Readings</h2>
+<p><em>Visual C#&reg; 2017: How to Program</em>, Chapter 3<br />The vocabulary terms mentioned at the beginning include several terms you should understand to ensure your mastery of the C# language.</p>
+<h2>Additional Readings</h2>
+<p><b>Required Readings</b></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/inside-a-program/hello-world-your-first-program?tabs=windows" target="_blank" rel="noopener noreferrer">"Hello World -- Your First Program"&nbsp;</a><br />Here, Microsoft walks you through a simple program almost the same as the one in the text. Use this only for repetition or if you feel a slightly different way of explaining the concepts will help you.</li>
+<li><a href="http://www.ask.com/youtube?q=simple+c%23+console+application&amp;v=6c23i4nsSok&amp;qsrc=472" target="_blank" rel="noopener noreferrer">YouTube Console Tutorial</a>. Wait until&nbsp;<strong>AFTER</strong>&nbsp;you have walked through the example in the text. When you view this YouTube video, you will see a program that shows you more and different commands that you will want to use soon.</li>
+<li><a href="http://msdn.microsoft.com/en-us/library/x53a06bb.aspx" target="_blank" rel="noopener noreferrer">C# Keywords</a>. You probably are not ready for this page yet, but I recommend you keep the URL handy for later reference. This page shows all of the C# keywords, and allows you to click on any one keyword and see a detailed explanation of that function and how to use it.</li>
+<li><a href="http://msdn.microsoft.com/en-us/library/h21280bw.aspx" target="_blank" rel="noopener noreferrer">Escape Sequences</a>. Your text shows several escape sequences. This link shows you the complete list. Again, you may not need it now, but it would be a good thing to print and place in your programming folder.&nbsp;</li>
+<li><a href="https://docs.microsoft.com/en-us/cpp/standard-library/basic-string-class?view=vs-2017" target="_blank" rel="noopener">String Interpolation</a>. Your text introduces you to a mechanism called string interpolation. You can refer to those figures to understand how to insert values in string literals to create formatted strings.</li>
+</ul>
+<p><b>Supplemental Readings</b></p>
+<ul>
+<li><a href="http://rbwhitaker.wikidot.com/c-sharp-math%20" target="_blank" rel="noopener noreferrer">Basic Math</a>. This page (two pages long if you print it), is a good summary of how mathematics is used in C#, and just about all computer programming languages.&nbsp;</li>
+<li>This page will demonstrate Relational Operators, the main way to ask True/False questions in computer programming:&nbsp;<a href="http://www.tutorialspoint.com/csharp/csharp_relational_operators.htm" target="_blank" rel="noopener noreferrer">http://www.tutorialspoint.com/csharp/csharp_relational_operators.htm</a></li>
+</ul>
+</div>
+</div>
+</header><main>
+<div class="row">
+<div class="col-xs-12 "><hr /></div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<h2>Lecture Notes</h2>
+</div>
+<div class="col-xs-12 ">
+<p>In the last lesson, you spent a considerable amount of time investigating options in Visual Studio. As you learned, the IDE provides a variety of features to the programmer, including the ability to create project solutions, debug programs, and edit form objects that the end user can interact with. In the last lesson, you also spent a good deal of time creating a form, adding a picture to that form, and then running the project to display the design as an interactive project. What you didn't do, however, was write any actual C# code to control the form in any way. In a technical sense, the last lesson had you create a programming project with very little "programming." This lesson is the exact opposite of the last lesson, in that it just focuses on programming with the C# language.</p>
+<p>At this point in your course, the discussion of Visual C# has been primarily theoretical. You&rsquo;ve learned about the different programming methods and languages and the tools used to program. These are all different, and important, ingredients used when programming, but the most important ingredient of all is the code itself! Today, you&rsquo;ll dive into programming with C#. What's important to notice is that I didn't say "Visual" C#,&rdquo; but rather just "C#." Why is this important to note? C# reflects the language the programmer develops in. The term Visual connotes the user's interactivity with using the program developed by the language. It's important you understand this one last concept before you continue your journey into programming with Visual C#.</p>
+<p>Think of Visual C# as a theatrical performance, where what you see onstage and what happens behind the scenes are two mutually exclusive things. Both of these things are related, and most certainly must be in sequence with one another, but what happens onstage is only the "presentation," whereas the "logic" of the performance&mdash;what lights should be on/off, where the audio should feed from, where characters should enter and leave, or what props the characters should have available&mdash;is all maintained behind the curtain. Visual C# is the same concept, where the "presentation layer" and the "business," or &ldquo;logic,&rdquo; layer are two separate things. With our business layer, we can still receive feedback from the presentation layer to determine what the end user is doing, such as if he or she has entered data, pressed a button, or even closed a window. What we do with that data, however, is completely irrelevant to what the end user can see. To that point, there are some applications where a user interface isn't even required!</p>
+<p>So as you follow the lesson today, understand that the code you will see examples of, and write with, will be a similar code that you write when you have a visual element (such as a form) in your program. What will change is how a user will interact with the program. In today's lesson, you will use the basic console application, which is just a simple command-based terminal window that can read text and have text written to it, but not much more than that visually. The capabilities for a console application, however, are endless!</p>
+<blockquote>
+<p>A console application, in the context of C#, is an application that takes input and displays output at a command line console with access to three basic data streams: standard input, standard output and standard error.</p>
+&nbsp;
+<p>A console application facilitates the reading and writing of characters from a console - either individually or as an entire line. It is the simplest form of a C# program and is typically invoked from the Windows command prompt. A console application usually exists in the form of a stand-alone executable file with minimal or no graphical user interface (GUI). (Retrieved from: <a href="https://www.techopedia.com/definition/25593/console-application-c)">https://www.techopedia.com/definition/25593/console-application-c)</a></p>
+</blockquote>
+<p>C# console applications have all the features of the .NET Framework. Console applications can read/write data to text files, databases, or Web services. They can transfer files across networks, or even the Internet. They can perform a batch of commands at the press of a (keyboard) button. Do not be fooled; a console application may look bland, but its power is anything but.</p>
+<p>So with that in mind, this lesson will introduce you to a number of concepts for programming with C#. This lesson will showcase commenting code, reserved keywords, and working with input/output of data with an end user's interaction. You will also explore data types, including the different types of integers, floating-point precision numbers, and even text-based string data types. The lesson also showcases some of the common uses of these data types, including arithmetic against number typed values, comparing two different values to one another, and how data are committed to the computer's memory for processing. Are you excited yet? If so, let&rsquo;s get started!</p>
+<p><strong>References</strong></p>
+<p>Anonymous. (n.d.). Console Application,&nbsp;<em>Techopedia.</em></p>
+<p>Deitel, P. and Deitel, H. (2017). Visual C#&reg; 2017: How to Program, Sixth Edition. Pearson</p>
+<div class="well">
+<div class="well-text text-left">
+<p><strong>PowerPoint Lecture Notes</strong></p>
+<p>Use the lecture notes available in PowerPoint as you study this chapter by CLICKING THE LINK BELOW. These notes will help you identify main concepts and ideas presented in this chapter.</p>
+<p>If you do not have PowerPoint on your computer, you can download a free viewer from Microsoft by clicking <a href="https://office.live.com/start/PowerPoint.aspx" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p><a href="../../v9/PowerPoints/K07K%20PP%20Chapter%203.ppt" target="_self"></a><a rel="noopener" href="../../K07K%20PP%20Chapter%203.pptx" target="_blank">Chapter 3</a><a href="../../v9/PowerPoints/K07K%20PP%20Chapter%203.ppt" target="_self"></a></p>
+</div>
+</div>
+</div>
+</div>
+</main></div>
+<p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>// <![CDATA[
+window.jQuery || document.write('<script src="../../assets/thirdpartylib/jquery/jquery-1.11.3.min.js"><\/script>')
+// ]]></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/shared/HTML-Template-Library/HighSchool/layouts/../../assets/thirdpartylib/svg4everybody/svg4everybody.min.js"></script>
+</p>
+</body>
+
+</html>
