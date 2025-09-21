@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RadioGUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4cb13b678949df17d48845a6ac580de35336b428")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51ac0570919111949154beb11a5ef29e4cedbc80")]
 [assembly: System.Reflection.AssemblyProductAttribute("RadioGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RadioGUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
