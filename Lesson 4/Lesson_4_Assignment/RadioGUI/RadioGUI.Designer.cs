@@ -262,7 +262,7 @@ namespace RadioGUI
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(426, 182);
+            ClientSize = new Size(385, 182);
             Controls.Add(grpPresets);
             Controls.Add(grpSpeakers);
             Controls.Add(btnPower);
