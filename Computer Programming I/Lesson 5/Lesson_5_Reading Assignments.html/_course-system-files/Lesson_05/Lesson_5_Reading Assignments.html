@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Developer Template - Topic 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Font Awesome CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Course Styles -->
+    <link rel="stylesheet" href="/shared/HTML-Template-Library/HighSchool/layouts/../assets/css/main.min.css"> </head>
+
+<body class="content layout-1" role="document">
+<div class="container-fluid"><header>
+<div class="row">
+<div class="col-xs-12 ">
+<h2>Text Readings</h2>
+<p><em>Visual C#&reg; 2017: How to Program</em>, Chapter 4</p>
+<p>In your textbook, carefully study Chapter 4 in the textbook to study the basics of implementing object-oriented programming with C#. Much like the last chapter, you will use a console window to interact with the program, so follow and perform the examples provided in the chapter and practice documenting your class designs with Unified Modeling Language (UML), as discussed throughout the lesson, to help familiarize yourself with these principles.</p>
+<h2>Additional Readings</h2>
+<p><b>Required Readings</b></p>
+<ul>
+<li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/types/" target="_blank" rel="noopener noreferrer">Types (C# Programming Guide) Visual Studio</a></li>
+<li><a href="http://www.codeproject.com/Articles/764086/Exploring-Csharp-variables" target="_blank" rel="noopener noreferrer">Exploring C# Variables</a></li>
+</ul>
+</div>
+</div>
+</header><main>
+<div class="row">
+<div class="col-xs-12 "><hr /></div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<h2>Lecture Notes</h2>
+</div>
+<div class="col-xs-12 ">
+<p>I have no doubt that if you can make it through this lesson you can become a successful programmer using Visual C#. I cannot overstate the following: The most important theories you will ever learn in programming take place in this lesson. At this point in your program, we have to marry the visual aspects of programming with the C# language. This isn't by accident: these are two very different concepts, and understanding their differences will help you choose your career path upon successfully completing your course. Object-oriented programming is arguably the most powerful programming methodology in our modern era. Its flexibility in various industries and programming practices alike make the concept universally accepted on programming teams. However, OOP is high-level programming, and in some cases difficult to grasp.</p>
+<p>Computer programming is a different way of thinking; programmers must think about details and work through logic that most people don't have to concern themselves with. When you get frustrated learning this material (and you will&mdash;no programmer in the world understood OOP on their first introduction to it), remember what I told you in the beginning of this course: practice makes perfect. Read this chapter, follow the examples, and learn the terminology. Know what a class is, what a property is, what a method is, and how to create these things. Don't trivialize terminology at this level, because learning these concepts now will only allow other concepts to "click" later, and trust me, they will!</p>
+<p>In the English language, the term&nbsp;<em>object</em>&nbsp;is defined as "Something perceptible by the senses, especially by vision or touch." I want you to stop reading and over the next 10 seconds or so look around the room and count the number of "objects" in the room that you are in. How many did you get? I'm sure at least 10, potentially 100, but if you didn't lift your head too much and used your book, you easily could have gotten to several thousand or so.</p>
+<p>The term object is a very generic term. An object can be a book, pages in a book, a page, words on that page, a single word on the page, or letters in a word. In a room, an object can be a lamp, or the light bulb within a lamp, or the filament within the light bulb within a lamp. If you were asked to "return the object to the store," there are countless items that could be misconstrued for what the correct object is that you are to return! As you can see, an object can be something very general (a book) or something very specific (page 135, paragraph number 2, word number 3, character 2). Conceptually understanding what an object is is very important to understanding OOP, which we will study in great detail in this chapter.</p>
+<p>Much like the word object is generic in our everyday usage of it, the object in the term object-oriented programming is also somewhat generic. This is because in OOP the programmer can decide what the object is. The programmer defines the object, how it works, what it does, and what it looks like. The programmer then tells the computer this information, and those directives are then carried out within a program.</p>
+<p>Every object in our reality has subtleties and features; similarly, objects in OOP also have features. A lamp has attributes such as width and height, has actions such as turn on and off, and has a general routine purpose, such as to illuminate. These same things can be written for an object in OOP. In OOP, a lamp's attributes are called properties. Much like the properties of the form object, or the Label control (which is also an object) we discussed previously, properties allow the programmer to assign information to an object, such as width and height, along with any information that may be deemed necessary by the programmer. Perhaps the programmer wants to also know the lamp&rsquo;s manufacturer, model type, serial number, date of purchase, the room the lamp resides in, and whether it is currently on or plugged in; these can all be properties of a lamp object defined by a programmer.</p>
+<p>As discussed earlier, a lamp also has actions. In OOP, actions are referred to as methods. If an object is considered a &ldquo;noun&rdquo; (a person, place, or thing), then a method is the &ldquo;verb&rdquo; in the OOP world, because methods do things. The actions mentioned earlier were a simple example, but are actions nonetheless&mdash;turn off and turn on. Using OOP logic, the programmer can create a routine once and reuse it countless times. In the logic, the programmer can also determine the current state of the lamp object by inspecting its properties to determine if it is currently plugged in and currently off or on. Once this is determined, the appropriate logic within the method can be written.</p>
+<p>Many details and features can go into something as simple as a lamp. In the OOP world, these features are all defined as a class. A class is the definition of the object that is being programmed. The class contains all the actions and properties and pre-programmed logic you want to create with your object, so you write it once and reuse it countless times. The general purpose of creating classes in OOP is so a programmer can reuse the logic, so other programs can use the classes, and so that the hairy details of how something works are hidden, or encapsulated. To a programmer, simply running a method called "turnLampOn" turns the lamp on. The programmer may have little to no knowledge of the tens, hundreds, or thousands of lines of code required to make this function actually work, it just works. It's simplicity in design.</p>
+<p>This lesson goes into great detail on classes, objects, and methods and on how to design a class. It also provides several examples on how to visually document class design using the Unified Modeling Language (UML), which is incredibly handy when designing OOP programs with a team of programmers. And, of course, your assigned reading is also packed full of examples that you can (and should) walk through with the textbook to fully grasp the nuances of class design in OOP. With that being said, let's dive in!</p>
+<div class="well">
+<div class="well-text text-left">
+<p><strong>PowerPoint Lecture Notes</strong></p>
+<p>Use the lecture notes available in PowerPoint as you study this chapter by CLICKING THE LINK BELOW. These notes will help you identify main concepts and ideas presented in this chapter.</p>
+<p>If you do not have PowerPoint on your computer, you can download a free viewer from Microsoft by clicking <a href="https://office.live.com/start/PowerPoint.aspx" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<a rel="noopener" href="../../K07K%20PP%20Chapter%2042.pptx" target="_blank">Chapter 4</a></div>
+</div>
+</div>
+</div>
+</main></div>
+<p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>// <![CDATA[
+window.jQuery || document.write('<script src="../../assets/thirdpartylib/jquery/jquery-1.11.3.min.js"><\/script>')
+// ]]></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/shared/HTML-Template-Library/HighSchool/layouts/../../assets/thirdpartylib/svg4everybody/svg4everybody.min.js"></script>
+</p>
+</body>
+
+</html>
