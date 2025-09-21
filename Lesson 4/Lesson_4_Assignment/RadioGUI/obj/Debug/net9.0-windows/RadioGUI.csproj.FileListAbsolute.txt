@@ -1,0 +1,17 @@
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\bin\Debug\net9.0-windows\RadioGUI.exe
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\bin\Debug\net9.0-windows\RadioGUI.deps.json
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\bin\Debug\net9.0-windows\RadioGUI.runtimeconfig.json
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\bin\Debug\net9.0-windows\RadioGUI.dll
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\bin\Debug\net9.0-windows\RadioGUI.pdb
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.RadioGUI.resources
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.csproj.GenerateResource.cache
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.AssemblyInfoInputs.cache
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.AssemblyInfo.cs
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.csproj.CoreCompileInputs.cache
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.sourcelink.json
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.dll
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\refint\RadioGUI.dll
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.pdb
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\RadioGUI.genruntimeconfig.cache
+C:\Users\javie\source\repos\javiersgthb\AshworthCollegeRepo\Lesson 4\Lesson_4_Assignment\RadioGUI\obj\Debug\net9.0-windows\ref\RadioGUI.dll
