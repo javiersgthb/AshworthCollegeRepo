@@ -1,0 +1,90 @@
+﻿<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Developer Template - Topic 1</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Font Awesome CDN CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Course Styles -->
+    <link rel="stylesheet" href="/shared/HTML-Template-Library/HighSchool/layouts/../assets/css/main.min.css"> </head>
+
+<body class="content layout-1" role="document">
+<div class="container-fluid"><header>
+<div class="row">
+<div class="col-xs-12 ">
+<h2>Text Readings</h2>
+<p><em>Visual C#&reg; 2017: How to Program</em>, Chapter 10</p>
+<h2>Additional Readings</h2>
+<p></p>
+<p><b>Required Readings</b></p>
+<ul>
+<li><a href="http://www.codeproject.com/Tips/803656/Practical-Difference-between-Const-ReadOnly" target="_blank" rel="noopener noreferrer">Practical Difference between Const &amp; ReadOnly</a></li>
+<li><a href="http://www.codeproject.com/Articles/5362/Garbage-Collection-in-NET-A-deeper-look-for-the-be" target="_blank" rel="noopener noreferrer">Garbage Collection in .NET - A Deeper Look for the Beginners</a></li>
+</ul>
+</div>
+</div>
+</header><main>
+<div class="row">
+<div class="col-xs-12 "><hr /></div>
+</div>
+<div class="row">
+<div class="col-xs-12">
+<h2>Lecture Notes</h2>
+</div>
+<div class="col-xs-12 ">
+<p>Welcome to the final lesson! In this lesson, we take a look at building classes, controlling access to members of a class, and creating constructors. The Time class case study in your text presented a complete class declaration consisting of private data, overloaded public constructors for initialization flexibility, properties for manipulating the class&rsquo;s data, and methods that returned string representations of a Time object in two different formats.</p>
+<ul>
+<li>Method ToUniversalString takes no arguments and returns a string in universal-time format, consisting of six digits&mdash;two for the hour, two for the minute and two for the second. For example, if the time were 1:30:07 PM, method ToUniversalString would return 13:30:07. Note that &ldquo;If the date and time instance value is an ambiguous time, this method assumes that it is a standard time. (An ambiguous time is one that can map either to a standard time or to a daylight saving time in the local time zone) If the date and time instance value is an invalid time, this method simply subtracts the local time from the local time zone's UTC offset to return UTC. (An invalid time is one that does not exist because of the application of daylight saving time adjustment rules.)&rdquo; (Retrieved from: <a href="https://docs.microsoft.com/en-us/dotnet/api/system.datetime.touniversaltime?redirectedfrom=MSDN&amp;view=netframework-4.8#System_DateTime_ToUniversalTime">https://msdn.microsoft.com/en-us/library/system.datetime.touniversaltime%28v</a>=vs.110%29.aspx)</li>
+<li>Method ToString takes no arguments and returns a string in standard time format, consisting of the hour, minute and second values separated by colons and followed by an AM or PM indicator (e.g., 1:27:06 PM). Remember that every class can declare a ToString method that returns a string representation of an object of the class and that this method is invoked implicitly when an object of a class is output as a string or concatenated with a string. Also note that&nbsp;&ldquo;<strong>ToString</strong>&nbsp;is virtual. It returns a string representation. We must override ToString on custom types for the method to be effective. For numeric types, there are performance and functional differences with ToString.&rdquo; (Retrieved from: <a href="http://www.dotnetperls.com/tostring)">http://www.dotnetperls.com/tostring)</a></li>
+</ul>
+<p>In this lesson, you will also learn that the&nbsp;<strong>this</strong>&nbsp;reference is used implicitly in a class&rsquo;s non-static methods to access the class&rsquo;s instance variables and other non-static methods. You are shown explicit uses of the&nbsp;<strong>this</strong>&nbsp;reference to access the class&rsquo;s members (including hidden fields) and how to use keyword&nbsp;<strong>this</strong>&nbsp;in a constructor to call another constructor of the class. In Visual Studio 2017,</p>
+<blockquote>&nbsp;
+<p>The&nbsp;<strong>this</strong>&nbsp;keyword refers to the current instance of the class and is also used as a modifier of the first parameter of an extension method.</p>
+&nbsp;
+<p>The following are common uses of this:</p>
+<ul>
+<li>To qualify members hidden by similar names, for example:&nbsp;<br /><br />C#<br /><br /><code>public&nbsp;Employee(string&nbsp;name,&nbsp;string&nbsp;alias)<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// Use this to qualify the fields, name and alias:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.name = name;<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;this.alias = alias;<br />}<br /></code></li>
+<li>To pass an object as a parameter to other methods, for example:</li>
+<li><code>CalcTax(this);</code></li>
+<li>To declare indexers, for example:&nbsp;<br /><br />C#<br /><br /><code>public int this[int&nbsp;param]<br />{<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;get&nbsp;{&nbsp;return&nbsp;array[param]; }<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;set&nbsp;{ array[param] = value; }<br />}</code></li>
+</ul>
+</blockquote>
+<p>Static member functions, because they exist at the class level and not as part of an object, do not have a&nbsp;<strong>this</strong>&nbsp;pointer. It is an error to refer to this in a static method. (Retrieved from: <a href="https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/dk1507sz(v=vs.110)" target="_blank" rel="noopener noreferrer">https://docs.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2012/dk1507sz(v=vs.110)</a>):</p>
+<p>As you complete this final lesson, you will see that composition enables a class to have references to objects of other classes as members. You will learn about C#&rsquo;s garbage-collection capability and how it reclaims the memory of objects that are no longer used. Every object you create uses various system resources, such as memory. The CLR performs automatic memory management by using a garbage collector to reclaim the memory occupied by objects that are no longer in use. The destructor is invoked by the garbage collector to perform termination housekeeping on an object before the garbage collector reclaims the object&rsquo;s memory. Because of this, memory leaks, which are common in other languages like C and C++ (because memory is not automatically reclaimed in those languages), are less likely in C#.</p>
+<p>As this lesson ends, you will learn how to declare and initialize readonly variables. Note that &ldquo;The IsReadOnly property of the FileInfo class returns if a file is read only. The following code snippet returns true if a file is read only.</p>
+<p><code>// File ReadOnly ?<br />bool IsReadOnly = fi.IsReadOnly;<br />Console.WriteLine("Is ReadOnly: {0}", IsReadOnly);</code></p>
+<p>(Retrieved from: <a href="https://www.c-sharpcorner.com/UploadFile/mahesh/how-to-check-if-a-file-is-read-only-in-C-Sharp/" target="_blank" rel="noopener noreferrer">https://www.c-sharpcorner.com/UploadFile/mahesh/how-to-check-if-a-file-is-read-only-in-C-Sharp/</a>):</p>
+<p>Finally, you will learn how to use Visual Studio&rsquo;s Class View and Object Browser windows to navigate the classes of the Framework Class Library and your own apps to discover information about those classes.</p>
+<p>I hope you have enjoyed this course and can apply what you have learned here. On to the next course &ndash; Computer Programming II!</p>
+<p><strong>Resources</strong></p>
+<p>Anonymous (n.d.). DateTime.ToUniversalTime Method.&nbsp;<em>Microsoft Developer Network.</em></p>
+<p>Anonymous (n.d.). this (C# Reference).&nbsp;<em>Microsoft Developer Network.</em></p>
+<p>Chand, M., (Dec 20, 2018). How to check if a file is read only in C#,&nbsp;<em>C# Corner.</em></p>
+<p>Deitel, P. and Deitel, H. (2017). Visual C#&reg; 2017: How to Program, Sixth Edition. Pearson</p>
+<div class="well">
+<div class="well-text text-left">
+<p><strong>PowerPoint Lecture Notes</strong></p>
+<p>Use the lecture notes available in PowerPoint as you study this chapter by CLICKING THE LINK BELOW. These notes will help you identify main concepts and ideas presented in this chapter.</p>
+<p>If you do not have PowerPoint on your computer, you can download a free viewer from Microsoft by clicking <a href="https://office.live.com/start/PowerPoint.aspx" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<a rel="noopener" href="../../K07K%20PP%20Chapter%2010.pptx" target="_blank">Chapter 10</a></div>
+</div>
+</div>
+</div>
+</main></div>
+<p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>// <![CDATA[
+window.jQuery || document.write('<script src="../../assets/thirdpartylib/jquery/jquery-1.11.3.min.js"><\/script>')
+// ]]></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="/shared/HTML-Template-Library/HighSchool/layouts/../../assets/thirdpartylib/svg4everybody/svg4everybody.min.js"></script>
+</p>
+</body>
+
+</html>
