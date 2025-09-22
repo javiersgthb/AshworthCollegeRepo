@@ -52,7 +52,7 @@ namespace RestaurantBillCalculator
             UpdateTotals();
         }
 
-        private void BindCombo(ComboBox combo, Dictionary<string, decimal> source)
+        private static void BindCombo(ComboBox combo, Dictionary<string, decimal> source)
         {
             combo.Items.Clear();
             foreach (var kv in source)
@@ -61,13 +61,13 @@ namespace RestaurantBillCalculator
             combo.SelectedIndex = 0; // default "(none)"
         }
 
-        private decimal GetSelectedPrice(ComboBox combo, Dictionary<string, decimal> source)
+        private static decimal GetSelectedPrice(ComboBox combo, Dictionary<string, decimal> source)
         {
             if (combo.SelectedIndex < 0) return 0m;
 
             var display = combo.SelectedItem?.ToString() ?? "";
             var cut = display.LastIndexOf(" (", StringComparison.Ordinal);
-            var name = (cut > 0) ? display.Substring(0, cut) : display;
+            var name = (cut > 0) ? display[..cut] : display;
 
             return source.TryGetValue(name, out var price) ? price : 0m;
         }
