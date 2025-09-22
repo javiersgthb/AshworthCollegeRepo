@@ -3,7 +3,7 @@ using System.Windows.Forms;
 
 namespace RestaurantBillCalculator
 {
-    internal static class Program
+    static class Program
     {
         [STAThread]
         static void Main()
